@@ -7,12 +7,12 @@ const e = exposes.presets;
 const ea = exposes.access;
 
 const definition = {
-    zigbeeModel: ['STM32WB'], // The model ID from: Device with modelID 'lumi.sens' is not supported.
+    zigbeeModel: ['STM32WB'], // The model ID
     model: 'p-nucleo WB55', // Vendor model number, look on the device for a model number
     vendor: 'STMicroelectronics', // Vendor of the device (only used for documentation and startup logging)
-    description: 'P-nucleo wb55 development board for zigbee', // Description of the device, copy from vendor site. (only used fo>
+    description: 'P-nucleo wb55 development board for zigbee', // Description of the device
     extend: extend.light_onoff_brightness(),
-    exposes: [e.light_brightness().withEndpoint('button_1'), e.light_brightness().withEndpoint('button_2'), e.light_brightness().>
+    exposes: [e.light_brightness().withEndpoint('button_1'), e.light_brightness().withEndpoint('button_2'), e.light_brightness().withEndpoint('button_3'), e.light_brightness().withEndpoint('button_4'), e.light_brightness().withEndpoint('button_5')],
     endpoint: (device) => {
         return {'button_1': 17, 'button_2': 20, 'button_3': 21, 'button_4': 22, 'button_5': 23};
     },
