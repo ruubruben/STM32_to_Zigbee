@@ -6,8 +6,6 @@
  ******************************************************************************
  *  			Created on: Mar 16, 2022
  *      		Author: r_middelman
- *      		Owend by Triple Audio,
- *   			Will be used for the M!ka Mult!color project
  */
 
 #include "LED_Functions.h"
